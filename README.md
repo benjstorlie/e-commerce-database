@@ -72,7 +72,9 @@ THEN I am able to successfully create, update, and delete data in my database
     ```
     It makes the GET routes a little more complex, but I like having the data coming back being cleaner.  It's especially nicer with the many-to-many relationship of the products and tags.
 
-2. In the [Sequelize documentation](https://sequelize.org/docs/v6/core-concepts/assocs/#options-1), it says that `onDelete` is by default set to `SET NULL`. But when I didn't include that property explicitly, it behaved like it was set to `RESTRICT` instead.  I would get a 500 error when attempting to delete a category that had products in it. I'm not sure where the on-delete behavior was changed.
+2. In the [Sequelize documentation](https://sequelize.org/docs/v6/core-concepts/assocs/#options-1), it says that `onDelete` is by default set to `SET NULL`. But when I didn't include that property explicitly, it behaved like it was set to `RESTRICT` instead.  I would get a 500 error when attempting to delete a category that had products in it.
+
+    I'm not sure where the on-delete behavior was changed.  It has to do with the redundant declaring of the `category_id` column.  Sequelize by default would create `categoryId` when setting the one-to-many association, unless otherwise specified.  When I removed all the redundancy, and renamed the seeds' category column name, `onDelete` behaved like `SET NULL` without having to specify.  I made these changes in the branch "onDelete-behavior".
 
 
 ## License
