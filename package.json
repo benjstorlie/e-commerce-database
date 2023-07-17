@@ -1,5 +1,5 @@
 {
-  "name": "module-13-challenge-orm",
+  "name": "e-commerce-database",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@work.github.com:coding-boot-camp/module-13-challenge-orm.git"
+    "url": "git@github.com:benjstorlie/e-commerce-database.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Ben Storlie <benjstorlie@gmail.com> (https://benjstorlie.github.io/)",
+  "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.3"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mysql2": "^2.1.0",
-    "sequelize": "^5.21.7"
+    "express": "^4.18.2",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
   }
 }
