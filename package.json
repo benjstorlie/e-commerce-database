@@ -13,7 +13,6 @@
     "type": "git",
     "url": "git@github.com:benjstorlie/e-commerce-database.git"
   },
-  "keywords": [],
   "author": "Ben Storlie <benjstorlie@gmail.com> (https://benjstorlie.github.io/)",
   "license": "MIT",
   "devDependencies": {
