@@ -1,7 +1,7 @@
 {
   "name": "e-commerce-database",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is the back-end for an e-commerce database, using an Express.js API to use Sequelize to interact with a MySQL database. The database can be updated using the API URLs. An e-commerce site can store their data about many products, and organize them with categories and tags.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
